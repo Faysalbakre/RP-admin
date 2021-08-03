@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Bwmitgaregular;
+    src: url('./FontsFree-Net-BwMitga-Regular.ttf');
+}
+@font-face {
+    font-family: Bwmitgabold;
+    src: url('./FontsFree-Net-BwMitga-Bold.ttf');
+}
+
+.body, html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #F1F6F7;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+.admin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.real{
+    background: url(background.svg);
+    background-blend-mode: luminosity;
+    background-size: contain;
+    width: 671px;
+    height: 1024px;
+}
+.real img{
+    z-index: 10;
+
+}
