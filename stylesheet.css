@@ -7,29 +7,141 @@
     src: url('./FontsFree-Net-BwMitga-Bold.ttf');
 }
 
-.body, html{
+body, html{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
+    width:100%;
     background-color: #F1F6F7;
-    overflow: hidden;
+    font-family: BwMitga;
 }
 *{
     box-sizing: border-box;
 }
 .admin{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .real{
-    background: url(background.svg);
-    background-blend-mode: luminosity;
-    background-size: contain;
-    width: 671px;
-    height: 1024px;
+    width: 50%;
+    height: 100%;
 }
-.real img{
+.real .background1{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.real .logo{
     z-index: 10;
-
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 40px;
+    top: 20px;
+}
+.log{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    width: 70%;
+}
+.login h4{
+    font-family: BwMitgabold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 180%;
+    color: #81818D;
+    margin: 0;
+}
+.mail{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px 0 10px;
+    background-color: #FFFFFF;
+}
+.mail img{
+    width: 15px;
+}
+#email{
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: BwMitgaregular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #A3AEBF;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+}
+.lock{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px 0 10px;
+    background-color: #FFFFFF;
+}
+.lock img{
+    width: 15px;
+}
+#password{
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: BwMitgaregular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 180%;
+    color: #A3AEBF;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-top: 1px solid #DFE3EA;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+.login button{
+    background: #F5322C;
+    border-radius: 3px;
+    font-family: BwMitgaregular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: transparent;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    padding: auto;
+}
+.login h6{
+    font-family: BwMitgaregular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 180%;
+    color: #A3AEBF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 120px;
 }
